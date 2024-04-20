@@ -88,21 +88,22 @@ const Products = () => {
 
   return (
     <div className="px-10 mt-20">
-      <div className="flex justify-between items-center gap-9">
-        <div className="flex justify-center items-center gap-11">
-          <div className="bg-red-600 w-5 h-5 rounded-full "></div>
-          <h1 className="text-black font-semibold text-3xl  overflow-y-hidden">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-5">
+        <div className="flex justify-center items-center gap-5 md:gap-11">
+          <div className="bg-red-600 w-5 h-5 rounded-full"></div>
+          <h1 className="text-black font-semibold text-3xl md:text-4xl overflow-y-hidden">
             Flash Sales
           </h1>
         </div>
 
-        <div className="flex gap-5 justify-center items-center">
-          <h1 className="font-semibold text-xl ">Offer Time:</h1>
-          <p className="font-bold text-3xl overflow-y-hidden text-red-600">
+        <div className="flex flex-col md:flex-row gap-5 justify-center items-center">
+          <h1 className="font-semibold text-xl md:text-2xl">Offer Time:</h1>
+          <p className="font-bold text-2xl md:text-3xl overflow-y-hidden text-red-600">
             {currentTime.toLocaleTimeString()}
           </p>
         </div>
-        <div className="flex justify-center gap-4 items-center">
+
+        <div className="flex gap-4 justify-center items-center">
           <div className="text-black bg-gray-300 flex justify-center items-center rounded-full shadow-md w-8 h-8 cursor-pointer">
             <FontAwesomeIcon
               icon={faChevronLeft}
@@ -126,7 +127,7 @@ const Products = () => {
           <>
             <div
               key={index}
-              className=" bg-gray-200 relative flex flex-col justify-center items-center min-w-60 min-h-60 gap-4 border-black border-[1px] px-10 py-5 rounded-xl"
+              className=" bg-gray-200 relative flex flex-col ml-8 justify-center items-center min-w-60 min-h-60 gap-4 border-black border-[1px] px-10 py-5 rounded-xl"
             >
               <div className=" opacity-0 bg-transparent z-10 w-full h-full absolute hover:opacity-100 duration-500 ">
                 <div className="text-white absolute bottom-0  text-center font-bold text-sm py-3 bg-black w-full">
@@ -154,7 +155,9 @@ const Products = () => {
         ))}
       </div>
 
-      <button className=" px-4 py-2 bg-red-500 text-white rounded-md m-auto flex my-12">View All Products</button>
+      <button className=" px-4 py-2 bg-red-500 text-white rounded-md m-auto flex my-12">
+        View All Products
+      </button>
       <hr />
     </div>
   );

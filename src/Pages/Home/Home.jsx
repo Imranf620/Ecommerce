@@ -3,11 +3,12 @@ import Navbar from "../../Components/Navbar/Navbar";
 import TopSec from "../../Components/topSec/TopSec";
 import Products from "../../Components/Product/Products";
 import Footer from "../../Components/Footer/Footer";
-import Login from "../../Components/Login/Login";
 import Top from "../../Components/Top/Top";
 import Categories from "../../Components/Categories/Categories";
 import SellingProduct from "../../Components/SellingProduct/SellingProduct";
-import ImageComp from "../../Components/Categories/ImageCom/ImageComp";
+import ImageComp from "../../Components/ImageCom/ImageComp";
+import ImagesSec from "../../Components/ImagesSec/ImagesSec";
+import Feature from "../../Components/Feature/Feature";
 
 const Home = () => {
   return (
@@ -23,8 +24,8 @@ const Home = () => {
       <Categories/>
       <SellingProduct/>
       <ImageComp/>
-      <Login/>
-
+      <ImagesSec/>
+      <Feature/>
       <Footer/>
     </div>
   );

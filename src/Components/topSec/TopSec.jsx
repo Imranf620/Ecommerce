@@ -57,8 +57,8 @@ const TopSec = () => {
 
   return (
     <div>
-      <hr  />
-      <div className="flex flex-col main md:flex-row">
+      <hr className="mb-10 md:mb-0"  />
+      <div className="flex flex-col main md:flex-row ">
         <div className="hidden md:flex flex-col gap-8 px-16 w-[25vw] py-10 border-r-[1px] border-black mr-14 font-semibold ">
           {fashionCategories.map((category, index) => (
             <h1
