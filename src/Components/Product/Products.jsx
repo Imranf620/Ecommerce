@@ -130,7 +130,7 @@ const Products = () => {
               className=" bg-gray-200 relative flex flex-col ml-8 justify-center items-center min-w-60 min-h-60 gap-4 border-black border-[1px] px-10 py-5 rounded-xl"
             >
               <div className=" opacity-0 bg-transparent z-10 w-full h-full absolute hover:opacity-100 duration-500 ">
-                <div className="text-white absolute bottom-0  text-center font-bold text-sm py-3 bg-black w-full">
+                <div className="text-white absolute bottom-0  text-center font-bold text-sm py-3 bg-black w-full cursor-pointer">
                   Add to Cart
                 </div>
               </div>

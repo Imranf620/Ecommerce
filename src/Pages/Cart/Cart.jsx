@@ -4,6 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Button = ({ children, className, onClick }) => (
   <button
@@ -127,8 +128,8 @@ const Cart = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-center mt-4">
-          <Button className="mb-4 sm:mb-0">Return to Shop</Button>
-          <Button>Update Cart</Button>
+          <Button className="mb-4 sm:mb-0 hover:bg-red-500 hover:text-white duration-300">Return to Shop</Button>
+          <Button className="hover:bg-red-500 hover:text-white duration-300">Update Cart</Button>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:justify-between mt-6">
@@ -155,7 +156,9 @@ const Cart = () => {
               <h3>Total:</h3>
               <span>${subtotal}</span>
             </div>
+            <Link to="/billing">
             <Button className="bg-red-500 text-white border-none">Proceed to Checkout</Button>
+            </Link>
           </section>
         </div>
       </div>

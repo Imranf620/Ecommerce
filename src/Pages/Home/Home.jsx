@@ -9,6 +9,7 @@ import SellingProduct from "../../Components/SellingProduct/SellingProduct";
 import ImageComp from "../../Components/ImageCom/ImageComp";
 import ImagesSec from "../../Components/ImagesSec/ImagesSec";
 import Feature from "../../Components/Feature/Feature";
+import BestSellingProducts from "../../Components/BestSellingProducts/BestSellingProducts";
 
 const Home = () => {
   return (
@@ -21,12 +22,14 @@ const Home = () => {
       <div>
         <Products />
       </div>
-      <Categories/>
-      <SellingProduct/>
+      <BestSellingProducts/>
+      {/* <SellingProduct/> */}
       <ImageComp/>
+      <Categories/>
       <ImagesSec/>
       <Feature/>
       <Footer/>
+
     </div>
   );
 };

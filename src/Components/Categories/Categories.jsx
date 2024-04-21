@@ -49,7 +49,7 @@ const Categories = () => {
         <h1 className="text-red-600 font-semibold">Categories</h1>
       </div>
       <div className="flex justify-between items-center">
-        <h1 className="font-bold text-2xl text-nowrap w-[30vw]">
+        <h1 className="font-bold text-2xl text-nowrap lg:w-[30vw] w-full">
           Browse by Category
         </h1>
         <div className="flex justify-center gap-4 items-center">
@@ -65,7 +65,7 @@ const Categories = () => {
         {categoryData.map((category, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center min-w-40 gap-4 border-black border-[1px] px-10 py-5 rounded-xl"
+            className="flex flex-col justify-center items-center min-w-40 gap-4 border-black border-[1px] px-10 py-5 rounded-xl hover:bg-red-500"
           >
             <FontAwesomeIcon className="w-10 h-10" icon={category.icon} />
             <h1 className="font-semibold">{category.text}</h1>
