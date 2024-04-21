@@ -30,7 +30,7 @@ const TopSec = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "https://media.istockphoto.com/id/1439425791/photo/digital-technology-software-development-concept-coding-programmer-working-on-laptop-with.webp?b=1&s=170667a&w=0&k=20&c=c0Q8u1Y5yFJCDxltBZd0RAn1g01Se6qCjZGS5q9XLZs=",
+    "https://source.unsplash.com/random",
     "https://media.istockphoto.com/id/1432249453/photo/a-male-programmer-shows-a-female-colleague-a-coding-technique-the-codes-are-visible-on-the.webp?b=1&s=170667a&w=0&k=20&c=vEz9LXgvZNn8sHbVnPLTmnTtlqZtNKXQLg8xrbVc5rM=",
     "https://media.istockphoto.com/id/1536191188/photo/web-developers-using-a-computer-together-in-an-office.webp?b=1&s=170667a&w=0&k=20&c=12s792O3eRQUBbfts90cqJjCAnGkR_UZ_2s2LbBm6GM=",
   ];
@@ -57,7 +57,7 @@ const TopSec = () => {
 
   return (
     <div>
-      <hr className="mb-10 md:mb-0"  />
+      <hr className="mb-10 md:mb-0" />
       <div className="flex flex-col main md:flex-row ">
         <div className="hidden md:flex flex-col gap-8 px-16 w-[25vw] py-10 border-r-[1px] border-black mr-14 font-semibold ">
           {fashionCategories.map((category, index) => (

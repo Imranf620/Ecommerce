@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className="flex flex-col md:flex-row justify-around   ">
       <div className=" flex justify-between items-center overflow-x-hidden mx-2 my-4 md:gap-[15vw]">
         <div>
-          <h1 className="font-bold text-xl md:text-2xl">Exclusive</h1>
+          <Link to="/" className="font-bold text-xl md:text-2xl">Exclusive</Link>
         </div>
         <div className={` hidden md:flex gap-6 md:text-xl lg:gap-12`}>
           <Link
@@ -36,20 +36,20 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <h1
+          <Link to="/contact"
             className={`font-semibold ${
               location.pathname === "/contact" ? "line" : ""
             }`}
           >
             Contact
-          </h1>
-          <h1
+          </Link>
+          <Link to="/about"
             className={`font-semibold ${
               location.pathname === "/about" ? "line" : ""
             }`}
           >
             About
-          </h1>
+          </Link>
           <Link
             to="/signup"
             className={`font-semibold ${
@@ -105,8 +105,8 @@ const Navbar = () => {
             <Link to="/" className="font-semibold">
               Home
             </Link>
-            <h1 className="font-semibold">Contact</h1>
-            <h1 className="font-semibold">About</h1>
+            <Link to="/contact" className="font-semibold">Contact</Link>
+            <Link to="/about" className="font-semibold">About</Link>
             <Link to="/signup" className="font-semibold">
               Signup
             </Link>
@@ -130,7 +130,7 @@ const Navbar = () => {
         <div className="absolute flex flex-col z-10 right-2 top-32 gap-4 p-3 bg-gradient-to-tr from-black  to-[#9b9a9a] rounded">
           <h1 className="text-white flex justify-between items-center px-3 gap-2">
             <FontAwesomeIcon icon={faUser} />
-            <h1>Manage My Account</h1>
+            <Link to="/profile">Manage My Account</Link>
           </h1>
           <h1 className="text-white flex justify-between items-center px-3 gap-2">
             <FontAwesomeIcon icon={faUser} />
