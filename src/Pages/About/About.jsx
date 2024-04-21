@@ -68,11 +68,11 @@ const About = () => {
             {teamMembers.map((member, index) => (
               <article
                 key={index}
-                className="flex flex-col items-center overflow-y-hidden bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-transform duration-300 hover:scale-105"
+                className="flex flex-col items-center overflow-y-hidden bg-white p-6 rounded-lg border border-gray-200 shadow-sm transition-transform duration-300 "
               >
                 <div className="overflow-hidden rounded-lg">
                   <img
-                    className="w-72 h-auto aspect-[1.2] object-cover"
+                    className="w-72 h-auto aspect-[1.2] object-cover hover:scale-105 duration-300"
                     src={member.imgSrc}
                     alt={`${member.name}, ${member.role}`}
                   />

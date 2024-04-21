@@ -72,22 +72,22 @@ const Contact = () => {
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
               <div className="flex flex-col">
                 <label className="text-black">Your Name <span className="text-red-500">*</span></label>
-                <input type="text" className="p-2 bg-neutral-100 rounded" required />
+                <input type="text" className="p-2 bg-neutral-100 rounded border-b-black border-b-[1px]" required />
               </div>
 
               <div className="flex flex-col">
                 <label class="text-black">Your Email <span class="text-red-500">*</span></label>
-                <input type="email" className="p-2 bg-neutral-100 rounded" required />
+                <input type="email" className="p-2 bg-neutral-100 rounded border-b-black border-b-[1px]" required />
               </div>
 
               <div className="flex flex-col">
                 <label class="text-black">Your Phone <span class="text-red-500">*</span></label>
-                <input type="tel" className="p-2 bg-neutral-100 rounded" required />
+                <input type="tel" className="p-2 bg-neutral-100 rounded border-b-black border-b-[1px] " required />
               </div>
 
               <div className="flex flex-col">
                 <label className="text-black">Your Message</label>
-                <textarea className="p-2 bg-neutral-100 rounded" rows="5"></textarea>
+                <textarea className="p-2 bg-neutral-100 rounded border-b-black border-b-[1px]" rows="5"></textarea>
               </div>
 
               <div className="flex justify-end">

@@ -95,7 +95,7 @@ const Profile = () => {
                 <label className="text-black">First Name</label>
                 <input
                   type="text"
-                  className="bg-neutral-100 p-2 rounded"
+                  className="bg-neutral-100 p-2 rounded border-b-black border-b-[1px]"
                   value={tempFirstName}
                   onChange={(e) => setTempFirstName(e.target.value)}
                 />
@@ -105,7 +105,7 @@ const Profile = () => {
                 <label class="text-black">Last Name</label>
                 <input
                   type="text"
-                  className="bg-neutral-100 p-2 rounded"
+                  className="bg-neutral-100 p-2 rounded border-b-black border-b-[1px]"
                   value={tempLastName}
                   onChange={(e) => setTempLastName(e.target.value)}
                 />
@@ -115,7 +115,7 @@ const Profile = () => {
                 <label className="text-black">Email</label>
                 <input
                   type="email"
-                  className="bg-neutral-100 p-2 rounded"
+                  className="bg-neutral-100 p-2 rounded border-b-black border-b-[1px]"
                   value={tempEmail}
                   onChange={(e) => setTempEmail(e.target.value)}
                 />
@@ -125,7 +125,7 @@ const Profile = () => {
                 <label className="text-black">Address</label>
                 <input
                   type="text"
-                  className="bg-neutral-100 p-2 rounded"
+                  className="bg-neutral-100 p-2 rounded border-b-black border-b-[1px]"
                   value={tempAddress}
                   onChange={(e) => setTempAddress(e.target.value)}
                 />
@@ -140,7 +140,7 @@ const Profile = () => {
                     required
                     value={tempCurrentPassword}
                     onChange={(e) => setTempCurrentPassword(e.target.value)}
-                    className="bg-neutral-100 p-2 rounded"
+                    className="bg-neutral-100 p-2 rounded border-b-black border-b-[1px]"
                   />
                   <input
                     type="password"
@@ -148,7 +148,7 @@ const Profile = () => {
                     required
                     value={tempNewPassword}
                     onChange={(e) => setTempNewPassword(e.target.value)}
-                    className="bg-neutral-100 p-2 rounded"
+                    className="bg-neutral-100 p-2 rounded border-b-black border-b-[1px]"
                   />
                   <input
                     type="password"
@@ -156,7 +156,7 @@ const Profile = () => {
                     required
                     value={tempConfirmNewPassword}
                     onChange={(e) => setTempConfirmNewPassword(e.target.value)}
-                    className="bg-neutral-100 p-2 rounded"
+                    className="bg-neutral-100 p-2 rounded border-b-black border-b-[1px]"
                   />
                 </div>
               </div>
@@ -165,7 +165,7 @@ const Profile = () => {
             <div className="mt-8 flex justify-end gap-4">
               <button className="text-black opacity-50">Cancel</button>
               <button
-                className="bg-red-500 text-white px-4 py-2 rounded"
+                className="bg-red-500 text-white px-4 py-2 rounded border-b-black border-b-[1px]"
                 onClick={handleSaveChanges}
               >
                 Save Changes

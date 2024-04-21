@@ -63,7 +63,7 @@ const TopSec = () => {
           {fashionCategories.map((category, index) => (
             <h1
               key={index}
-              className="text-nowrap flex justify-between hover:translate-x-6 duration-300"
+              className="text-nowrap flex justify-between hover:translate-x-6 duration-300 cursor-pointer"
             >
               {category} <span>&gt;</span>
             </h1>

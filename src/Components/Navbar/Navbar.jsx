@@ -32,16 +32,16 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={`hidden md:flex gap-6 md:text-xl lg:gap-12`}>
-          <Link to="/" className={`font-semibold ${location.pathname === "/" ? "line" : ""}`}>
+          <Link to="/" className={`font-semibold text-lg ${location.pathname === "/" ? "line" : ""}`}>
             Home
           </Link>
-          <Link to="/contact" className={`font-semibold ${location.pathname === "/contact" ? "line" : ""}`}>
+          <Link to="/contact" className={`font-semibold text-lg  ${location.pathname === "/contact" ? "line" : ""}`}>
             Contact
           </Link>
-          <Link to="/about" className={`font-semibold ${location.pathname === "/about" ? "line" : ""}`}>
+          <Link to="/about" className={`font-semibold text-lg  ${location.pathname === "/about" ? "line" : ""}`}>
             About
           </Link>
-          <Link to="/signup" className={`font-semibold ${location.pathname === "/signup" ? "line" : ""}`}>
+          <Link to="/signup" className={`font-semibold text-lg  ${location.pathname === "/signup" ? "line" : ""}`}>
             Signup
           </Link>
         </div>
@@ -51,10 +51,10 @@ const Navbar = () => {
             <div className="relative">
               <input
                 type="text"
-                className="border shadow-md border-gray-300 rounded-lg px-2 lg:mr-20 py-1  focus:outline-none md:w-28 lg:w-48 "
+                className="border shadow-md border-gray-300 rounded-lg px-2 lg:mr-40 py-1  focus:outline-none md:w-28 lg:w-52 "
                 placeholder="Search..."
               />
-              <FontAwesomeIcon className="absolute top-2 right-2 lg:right-20" icon={faMagnifyingGlass} />
+              <FontAwesomeIcon className="absolute top-2 right-2 lg:right-44" icon={faMagnifyingGlass} />
             </div>
           )}
           <div className={`flex justify-center items-center gap-2 z-10 md:hidden`}>
@@ -90,7 +90,7 @@ const Navbar = () => {
       )}
 
       {/* Icons (Heart, Cart, User) */}
-      <div className="flex flex-col gap-4 absolute pr-1 items-end z-10 right-1 top-32 lg:flex-row lg:top-[80px] lg:right-4 md:text-2xl">
+      <div className="flex flex-col gap-4 absolute pr-1 items-end z-10 right-1 top-32 lg:flex-row lg:top-[55px] lg:right-4 md:text-2xl">
         <FontAwesomeIcon icon={faHeart} />
         <Link to="/cart" className="relative">
           <h1 className="rounded-[100%] bg-red-500 w-4 text-center absolute right-0 top-0 text-xs text-white">4</h1>

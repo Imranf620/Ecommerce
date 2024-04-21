@@ -65,7 +65,7 @@ const Categories = () => {
         {categoryData.map((category, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-center min-w-40 gap-4 border-black border-[1px] px-10 py-5 rounded-xl hover:bg-red-500"
+            className="flex flex-col justify-center items-center min-w-40 gap-4 border-black border-[1px] px-10 py-5 rounded-xl cursor-pointer duration-500 hover:bg-red-500"
           >
             <FontAwesomeIcon className="w-10 h-10" icon={category.icon} />
             <h1 className="font-semibold">{category.text}</h1>
