@@ -72,7 +72,8 @@ exports.createUser = async (req, res) => {
 // POST /api/user/login
 exports.loginUser = async (req, res) => {
     try {
-        const { email, password } = req.body;
+        const email = req.body.Email;
+        const password = req.body.password;
 
         // Validate email and password
         if (!email || !password) {
@@ -81,6 +82,7 @@ exports.loginUser = async (req, res) => {
 
         // Check if user with the provided email exists
         const user = await User.findOne({ email });
+        console.log(user)
         if (!user) {
             return res.status(401).json({ message: 'Invalid email or password' });
         }
